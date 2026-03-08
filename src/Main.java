@@ -1,14 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        // Creamos un objeto de la clase hija
-        EmpleadoVendedor vendedor = new EmpleadoVendedor("Juan Perez", "12345678", 1500.0, 5000.0, 0.10);
+        // 3. IMPLEMENTACIÓN DE POLIMORFISMO
+        // Creamos un arreglo de la clase abstracta pero con instancias de clases hijas
+        Empleado[] nomina = new Empleado[2];
 
-        // Mostramos los datos usando los getters (Encapsulamiento)
-        System.out.println("Empleado: " + vendedor.getNombre());
+        nomina[0] = new EmpleadoVendedor("Juan Perez", "12345678", 1200.0, 5000.0, 0.10);
+        nomina[1] = new EmpleadoAdministrativo("Ana Gomez", "87654321", 1500.0, 300.0);
 
-        // El resultado de este cálculo debe ser: 1500 + (5000 * 0.10) = 2000
-        System.out.println("Salario Final: S/ " + vendedor.calcularSalarioFinal());
+        System.out.println("--- REPORTE DE NÓMINA ---");
+
+        for (Empleado emp : nomina) {
+            // Aquí se aplica el polimorfismo:
+            // el método se llama igual, pero hace cosas distintas según el objeto.
+            System.out.println("Empleado: " + emp.getNombre());
+            System.out.println("DNI: " + emp.getDni());
+            System.out.println("Salario Final: S/ " + emp.calcularSalarioFinal());
+            System.out.println("-------------------------");
+        }
     }
 }

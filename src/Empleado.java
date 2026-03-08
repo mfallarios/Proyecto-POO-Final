@@ -19,6 +19,10 @@ public abstract class Empleado {
 
     public double getSalarioBase() { return salarioBase; }
 
+    public String getDni() {
+        return dni;
+    }
+
     public void setSalarioBase(double salarioBase) {
         if (salarioBase > 0) {
             this.salarioBase = salarioBase;
