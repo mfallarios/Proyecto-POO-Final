@@ -10,4 +10,12 @@ public class EmpleadoAdministrativo extends Empleado {
     public double calcularSalarioFinal() {
         return getSalarioBase() + bonoMetas;
     }
+
+    public double getBonoMetas() {
+        return bonoMetas;
+    }
+
+    public void setBonoMetas(double bonoMetas) {
+        this.bonoMetas = bonoMetas;
+    }
 }

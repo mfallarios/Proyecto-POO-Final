@@ -10,9 +10,9 @@ public class Main {
         System.out.println("--- REPORTE DE NÓMINA ---");
 
         for (Empleado emp : nomina) {
-            // Aquí se aplica el polimorfismo:
+
             // el método se llama igual, pero hace cosas distintas según el objeto.
-            System.out.println("Empleado: " + emp.getNombre());
+            System.out.println("Personal: " + emp.getNombre());
             System.out.println("DNI: " + emp.getDni());
             System.out.println("Monto total a depositar: S/ " + emp.calcularSalarioFinal());
             System.out.println("-------------------------");
