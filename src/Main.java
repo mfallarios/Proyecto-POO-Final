@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         // 3. IMPLEMENTACIÓN DE POLIMORFISMO
         // Creamos un arreglo de la clase abstracta pero con instancias de clases hijas
-        Empleado[] nomina = new Empleado[2];
 
+        Empleado[] nomina = new Empleado[2];
         nomina[0] = new EmpleadoVendedor("Juan Perez", "12345678", 1200.0, 5000.0, 0.10);
         nomina[1] = new EmpleadoAdministrativo("Ana Gomez", "87654321", 1500.0, 300.0);
 
