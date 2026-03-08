@@ -14,7 +14,7 @@ public class Main {
             // el método se llama igual, pero hace cosas distintas según el objeto.
             System.out.println("Empleado: " + emp.getNombre());
             System.out.println("DNI: " + emp.getDni());
-            System.out.println("Salario Final: S/ " + emp.calcularSalarioFinal());
+            System.out.println("Monto total a depositar: S/ " + emp.calcularSalarioFinal());
             System.out.println("-------------------------");
         }
     }
